@@ -8,7 +8,6 @@
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-
 # Lirearías para utilizar FastAPI
 from fastapi import FastAPI, status
 from pydantic import  EmailStr
@@ -18,7 +17,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi import Depends
 from fastapi.security import HTTPBasic, HTTPBasicCredentials, HTTPBearer
 
-
 # Librerías de FastAPI para la seguridad
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -27,11 +25,9 @@ app = FastAPI()
 
 security = HTTPBasic()
 
-securirtyBearer = HTTPBearer()
-
 # Conectamos con nuestro Cluester de MongoDB
-
 URI = "mongodb+srv://myAtlasDBUser:mongoose@myatlasclusteredu.rr2gzwv.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU"
+
 CLIENTE = MongoClient(URI, server_api=ServerApi('1'))
 
 # Obtenemos una referencia de la base de datos
