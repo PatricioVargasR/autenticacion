@@ -31,7 +31,7 @@ securirtyBearer = HTTPBearer()
 
 # Conectamos con nuestro Cluester de MongoDB
 
-URI = ""
+URI = "mongodb+srv://myAtlasDBUser:mongoose@myatlasclusteredu.rr2gzwv.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU"
 CLIENTE = MongoClient(URI, server_api=ServerApi('1'))
 
 # Obtenemos una referencia de la base de datos
