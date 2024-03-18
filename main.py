@@ -26,7 +26,7 @@ app = FastAPI()
 security = HTTPBasic()
 
 # Conectamos con nuestro Cluester de MongoDB
-URI = "mongodb+srv://myAtlasDBUser:mongoose@myatlasclusteredu.rr2gzwv.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU"
+URI = ""
 
 CLIENTE = MongoClient(URI, server_api=ServerApi('1'))
 
